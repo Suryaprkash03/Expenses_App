@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const BACKEND_URL =
-  'https://expenses-data-7b139-default-rtdb.firebaseio.com';
+  'https://college-server-b9971-default-rtdb.firebaseio.com/';
 
 export async function storeExpense(expenseData) {
   const response = await axios.post(BACKEND_URL + '/expenses.json', expenseData);
